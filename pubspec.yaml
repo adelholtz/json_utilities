@@ -2,7 +2,7 @@ name: json_utilities
 description: A collection of json utilities to enhance the experience of working with json based models.
 version: 0.1.0
 author: Benjamin Krammel
-homepage:
+homepage: https://github.com/adelholtz/json_utilities
 publish_to: https://pub.dartlang.org
 
 environment:
