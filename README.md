@@ -1,9 +1,19 @@
 # json_utilities
 
 Dart/Flutter package to enhance the experience of working with json based models.
+
 Can be used in conjunction with [json_serializable](https://pub.dartlang.org/packages/json_serializable).
 
 See Examples for more details.
+
+## General Idea
+The general/basic idea was to have something similar like lodash or ramda when working with 'JSON' / Map<String,dynamic>
+in Dart.
+
+Some operations like checking for existence of certain JSON leafs can be tedious, that's where this package is
+supposed to come in and save the day!
+
+**This is a growing library, contributions are welcome!**
 
 ## Usage
 
