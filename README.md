@@ -67,7 +67,7 @@ Foo{
     FOO(this.condition);
 
     getLanguage(){
-       return JSONUtils().get(condition.toJson(),'language', 'none')+');
+       return JSONUtils().get(condition.toJson(),'language', 'none');
     }
 }
 ```
