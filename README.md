@@ -4,7 +4,7 @@ A new Flutter package.
 
 ## Usage
 
-To use this plugin, add json_utilites as a [dependency in your pubspec.yaml file(https://flutter.io/platform-plugins/)
+To use this plugin, add json_utilites as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
 
 ## Example
 ```dart
