@@ -1,8 +1,14 @@
+/// Json Utilities base class
 class JSONUtils {
   JSONUtils();
 
+  /// Returns <String,dynamic> || String
+  ///
+  /// follow a given path in a given <String,dynamic>json
+  /// and return found value if present or defaultValue if not present
   get(json, String path, String defaultValue) {
     List pathSplitter = path.split(".");
+    /// <String,dynamic> || String
     var returnValue;
 
     json.forEach((key, value) {
