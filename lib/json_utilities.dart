@@ -6,7 +6,7 @@ class JSONUtils {
   ///
   /// follow a given path in a given <String,dynamic>json
   /// and return found value if present or defaultValue if not present
-  get(json, String path, String defaultValue) {
+  get(json, String path, defaultValue) {
     List pathSplitter = path.split(".");
     /// <String,dynamic> || String
     var returnValue;
