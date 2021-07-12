@@ -16,7 +16,8 @@ void main() {
     assert(value == 'defaultValue');
 
     var dynamicValue = JSONUtils().get(json, 'root2', 'defaultValue');
-    assert(dynamicValue.runtimeType.toString() == '_InternalLinkedHashMap<String, dynamic>' );
+    assert(dynamicValue.runtimeType.toString() ==
+        '_InternalLinkedHashMap<String, dynamic>');
 
     value = JSONUtils().get(json, 'root2.leaf', 'defaultValue');
     assert(value == 'fruit');

@@ -5,4 +5,4 @@ var json = <String, dynamic>{
   'root2': <String, dynamic>{'leaf': 'fruit'}
 };
 
-String value = JSONUtils().get(json,'root.leaf', 'defaultValue');
+String value = JSONUtils().get(json, 'root.leaf', 'defaultValue');
