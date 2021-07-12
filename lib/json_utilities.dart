@@ -4,10 +4,11 @@ class JSONUtils {
 
   /// Returns <String,dynamic> || String
   ///
-  /// follow a given path in a given <String,dynamic>json
-  /// and return found value if present or defaultValue if not present
-  get(json, String path, defaultValue) {
+  /// follow a given [path] in a given <String,dynamic> [json]
+  /// and return found value if present or [defaultValue] if not present
+  dynamic get(Map<String, dynamic> json, String path, dynamic defaultValue) {
     List pathSplitter = path.split(".");
+
     /// <String,dynamic> || String
     var returnValue;
 
@@ -23,14 +24,14 @@ class JSONUtils {
           returnValue = defaultValue;
           return;
         }
-        try{
-          try{
+        try {
+          try {
             value = value.toJson();
-          }catch(error){
+          } catch (error) {
             // handle error
           }
           returnValue = get(value, pathSplitter.join("."), defaultValue);
-        }catch(error){
+        } catch (error) {
           returnValue = defaultValue;
         }
         return;
